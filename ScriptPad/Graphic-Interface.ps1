@@ -1,4 +1,4 @@
-Write-Host -ForegroundColor Green "Starting OSDCloud ZTI"
+Write-Host -ForegroundColor Green "Starting OSDCloudGUI"
 
 Start-Sleep -Seconds 5
 
@@ -14,24 +14,24 @@ Set-DisRes 1600
 
 #Make sure I have the latest OSD Content
 
-Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
+#Write-Host -ForegroundColor Green "Updating OSD PowerShell Module"
 
-Install-Module OSD -Force
+#Install-Module OSD -Force
 
-Write-Host -ForegroundColor Green "Importing OSD PowerShell Module"
+#Write-Host -ForegroundColor Green "Importing OSD PowerShell Module"
 
-Import-Module OSD -Force
+#Import-Module OSD -Force
 
 #Start OSDCloud ZTI the RIGHT way
 
-Write-Host -ForegroundColor Green "Start OSDCloud"
+#Write-Host -ForegroundColor Green "Start OSDCloud"
 
 Start-OSDCloudGUI
 
 #Restart from WinPE
 
-Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
+#Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
 
-Start-Sleep -Seconds 20
+#Start-Sleep -Seconds 20
 
-wpeutil reboot
+#wpeutil reboot
