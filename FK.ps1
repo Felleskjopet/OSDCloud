@@ -26,12 +26,14 @@ Import-Module OSD -Force
 
 Write-Host -ForegroundColor Green "Start OSDCloud"
 
-$command = Read-Host "Foreta valg for å kjøre installasjon:
+$command = Read-Host "Please make a choice between 1-4:
 
 1. Windows 11 22H2 Norsk
 2. Windows 11 22H2 Engeslk
 3. OSDCloud GUI
 4. OSDCloud Azure
+
+Select 1-4 and press enter
 
 "
 
