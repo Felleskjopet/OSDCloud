@@ -26,7 +26,25 @@ Import-Module OSD -Force
 
 Write-Host -ForegroundColor Green "Start OSDCloud"
 
-Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
+$command = Read-Host "Foreta valg for å kjøre installasjon:
+
+1. Windows 11 22H2 Norsk
+2. Windows 11 22H2 Engeslk
+3. OSDCloud GUI
+4. OSDCloud Azure
+
+"
+
+# Run the selected command
+switch($command) {
+    "1" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI }
+    "2" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage en-us -ZTI }
+    "3" { Start-OSDCloudGUI }
+    "4" { Start-OSDCloudAzure }
+    default { Write-Host "Invalid selection." }
+}
+
+#Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
 
 #Restart from WinPE
 
