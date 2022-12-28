@@ -2,8 +2,8 @@ Built-in apps listed below that are not prefixed with a  will be considered elig
 Prefix item with # to mark it for removal
 
 Microsoft.549981C3F5F10
-#Microsoft.BingNews
-#Microsoft.BingWeather
+Microsoft.BingNews
+Microsoft.BingWeather
 Microsoft.DesktopAppInstaller
 #Microsoft.GamingApp
 Microsoft.GetHelp
@@ -41,7 +41,7 @@ Microsoft.WindowsTerminal
 #Microsoft.XboxGamingOverlay
 #Microsoft.XboxIdentityProvider
 #Microsoft.XboxSpeechToTextOverlay
-#Microsoft.YourPhone
+Microsoft.YourPhone
 #Microsoft.ZuneMusic
 #Microsoft.ZuneVideo
 #MicrosoftTeams
