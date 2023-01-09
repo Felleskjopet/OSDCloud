@@ -48,6 +48,8 @@ switch($command) {
 
 #Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
 
+$ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/Set%20AutopilotOOBE%20CMD.ps1
+
 #Restart from WinPE
 
 Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
