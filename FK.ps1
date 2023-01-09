@@ -48,7 +48,24 @@ switch($command) {
 
 #Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
 
-$ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/Set%20AutopilotOOBE%20CMD.ps1
+#================================================
+#  [PostOS] AutopilotOOBE Configuration Staging
+#================================================
+
+$SetCommand = @'
+@echo off
+
+PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
+set path=%path%;C:\Program Files\WindowsPowerShell\Scripts
+start PowerShell -NoL -W Mi
+start "Install-Module AutopilotOOBE" /wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force -Verbose
+start "Start-AutopilotOOBE" PowerShell -NoL -C Start-AutopilotOOBE -Title 'FK Autopilot Registration' -Hidden AssignedUser, AssignedComputerName -GroupTag FK -GroupTagOptions FK, POS, JSA -AddToGroupOptions 'MEM - Flog Surface' -Assign -PostAction Restart Computer
+
+exit
+'@
+$SetCommand | Out-File -FilePath "C:\Windows\Autopilot.cmd" -Encoding ascii -Force
+
+
 
 #Restart from WinPE
 
