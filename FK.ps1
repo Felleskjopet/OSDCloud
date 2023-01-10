@@ -106,7 +106,6 @@ exit
 '@
 $SetCommand | Out-File -FilePath "C:\Windows\Autopilot.cmd" -Encoding ascii -Force
 
-Start /Wait PowerShell -NoL -C autopilot
 
 #Restart from WinPE
 
