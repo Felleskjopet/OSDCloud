@@ -98,7 +98,9 @@ $SetCommand = @'
 
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 set path=%path%;C:\Program Files\WindowsPowerShell\Scripts
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot /va /f
 start PowerShell -NoL -W Mi
+reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot /va /f
 start "Install-Module AutopilotOOBE" /wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force -Verbose
 start "Start-AutopilotOOBE" PowerShell -NoL -C Start-AutopilotOOBE -Title 'FK Autopilot Registration' -Hidden AssignedUser, AssignedComputerName -GroupTag FK -GroupTagOptions FK, POS, JSA -AddToGroupOptions 'MEM - Flog Surface' -Assign -PostAction Restart Computer
 
