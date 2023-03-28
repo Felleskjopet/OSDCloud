@@ -88,7 +88,7 @@ If (!(Test-Path "C:\ProgramData\OSDeploy")) {
 }
 
 $OOBEDeployJson | Out-File -FilePath "C:\ProgramData\OSDeploy\OSDeploy.OOBEDeploy.json" -Encoding ascii -Force
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/Set-KeyboardLaguages.ps1
+
 
 #================================================
 #  [PostOS] AutopilotOOBE Configuration Staging
@@ -100,6 +100,7 @@ $SetCommand = @'
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
 set path=%path%;C:\Program Files\WindowsPowerShell\Scripts
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot /va /f
+Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/Set-KeyboardLaguages.ps1
 Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 start PowerShell -NoL -W Mi
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot /va /f
