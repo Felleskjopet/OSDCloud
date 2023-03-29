@@ -71,7 +71,6 @@ $OOBEDeployJson = @'
                     "Microsoft.XboxGamingOverlay",
                     "Microsoft.XboxIdentityProvider",
                     "Microsoft.XboxSpeechToTextOverlay",
-                    "Microsoft.YourPhone",
                     "Microsoft.ZuneMusic",
                     "Microsoft.ZuneVideo"
                    ],
