@@ -104,7 +104,7 @@ Start /Wait PowerShell -NoL -C Start-OOBEDeploy
 start PowerShell -NoL -W Mi
 reg delete HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Provisioning\Diagnostics\AutoPilot /va /f
 start "Install-Module AutopilotOOBE" /wait PowerShell -NoL -C Install-Module AutopilotOOBE -Force -Verbose
-start "Start-AutopilotOOBE" PowerShell -NoL -C Start-AutopilotOOBE -Title 'FK Autopilot Registration' -Hidden AssignedUser, AssignedComputerName -GroupTag FK -GroupTagOptions FK, POS, JSA -AddToGroupOptions 'MEM - Flog Surface' -Assign -PostAction Restart Computer
+start "Start-AutopilotOOBE" PowerShell -NoL -C Start-AutopilotOOBE -Title 'FK Autopilot Registration' -Hidden AssignedUser, AssignedComputerName -GroupTag FK -GroupTagOptions FK, SA -AddToGroupOptions 'MEM - Flog Surface' -Assign -PostAction Restart Computer
 
 exit
 '@
