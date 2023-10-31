@@ -26,25 +26,27 @@ Set-DisRes 1600
 
 Write-Host -ForegroundColor Green "Start OSDCloud"
 
-$command = Read-Host "Please make a choice between 1-4:
+#$command = Read-Host "Please make a choice between 1-4:
 
-1. Windows 11 22H2 Norsk
-2. Windows 11 22H2 Engeslk
-3. OSDCloud GUI
-4. OSDCloud Azure
+#1. Windows 11 22H2 Norsk
+#2. Windows 11 22H2 Engeslk
+#3. OSDCloud GUI
+#4. OSDCloud Azure
 
-Select 1-4 and press enter
+#Select 1-4 and press enter
 
-"
+#"
 
 # Run the selected command
-switch($command) {
-    "1" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI }
-    "2" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage en-us -ZTI }
-    "3" { Start-OSDCloudGUI }
-    "4" { Start-OSDCloudAzure }
-    default { Write-Host "Invalid selection." }
-}
+#switch($command) {
+#    "1" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI }
+#    "2" { Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage en-us -ZTI }
+#   "3" { Start-OSDCloudGUI }
+#   "4" { Start-OSDCloudAzure }
+#    default { Write-Host "Invalid selection." }
+#}
+
+Start-OSDCloudGUI
 
 #Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
 
