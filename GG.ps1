@@ -122,7 +122,7 @@ $AutopilotParams = @{
     GroupTag = 'GG'
     Assign = $true
 }
-Get-WindowsAutoPilotInfo @AutopilotParams
+start "Get-WindowsAutoPilotInfo" PowerShell -NoL -C Get-WindowsAutoPilotInfo @AutopilotParams
 
 '@
 $SetCommand | Out-File -FilePath "C:\Windows\register.cmd" -Encoding ascii -Force
