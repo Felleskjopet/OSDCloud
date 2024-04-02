@@ -6,4 +6,4 @@ $AutopilotParams = @{
     GroupTag = 'GG'
     Assign = $true
 }
-start "Get-WindowsAutoPilotInfo" PowerShell -NoL -C Get-WindowsAutoPilotInfo @AutopilotParams
+Get-WindowsAutoPilotInfo @AutopilotParams
