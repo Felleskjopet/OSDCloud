@@ -4,6 +4,7 @@ $AutopilotParams = @{
     AppId = '94c9ae95-81f8-45fd-976b-1de5e9aa8b08'
     AppSecret = 'gpH8Q~GqCnjs0BZQj-jNPDFsN8FxDTNwcAeZzbH7'
     GroupTag = 'GG'
+    AddToGroupOptions = 'INTUNE_GG_DEVICE_WINDOWS_ALL_Backoffice'
     Assign = $true
 }
 Get-WindowsAutoPilotInfo @AutopilotParams
