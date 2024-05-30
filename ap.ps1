@@ -1,4 +1,5 @@
 PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
+start PowerShell -NoL -W Mi
 $AutopilotParams = @{
     Online = $true
     TenantId = '06bb15dc-3bc6-406d-b397-4f7fdd149de1'
