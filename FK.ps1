@@ -114,12 +114,7 @@ $SetCommand | Out-File -FilePath "C:\Windows\Autopilot.cmd" -Encoding ascii -For
 
 $SetCommand = @'
 @echo off
-PowerShell -NoL -Com Set-ExecutionPolicy RemoteSigned -Force
-start PowerShell -NoL -W Mi
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/app.ps1
 
-'@
-$SetCommand | Out-File -FilePath "C:\Windows\register.cmd" -Encoding ascii -Force
 
 #Restart from WinPE
 
