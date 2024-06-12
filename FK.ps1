@@ -113,7 +113,7 @@ exit
 $SetCommand | Out-File -FilePath "C:\Windows\Autopilot.cmd" -Encoding ascii -Force
 
 $SetCommand = @'
-@echo off
+
 
 
 #Restart from WinPE
