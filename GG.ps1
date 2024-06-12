@@ -112,12 +112,6 @@ exit
 '@
 $SetCommand | Out-File -FilePath "C:\Windows\Autopilot.cmd" -Encoding ascii -Force
 
-$SetCommand = @'
-@echo off
-Start /Wait PowerShell -NoL -C Invoke-WebPSScript https://raw.githubusercontent.com/Felleskjopet/OSDCloud/main/ap.ps1
-
-'@
-$SetCommand | Out-File -FilePath "C:\Windows\register.cmd" -Encoding ascii -Force
 
 
 #Restart from WinPE
