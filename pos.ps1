@@ -29,11 +29,9 @@ Write-Host -ForegroundColor Green "Start GG POS Installasjon"
 
 #$command = Read-Host "Please make a choice between 1-4:
 
-Write-Host "================ Main Menu ==================" -ForegroundColor Yellow
-Write-Host "=============================================" -ForegroundColor Yellow
+
+
 Write-Host "============== GG POS Installasjon ===============" -ForegroundColor Yellow
-Write-Host "==========  ==========" -ForegroundColor Yellow
-Write-Host "=============================================`n" -ForegroundColor Yellow
 Write-Host "ImageFileURL = $ImageFileUrl" -ForegroundColor Green
 
 Write-Host "`n ANSVARSFRISKRIVNING: ANVÄNDNING PÅ EGEN RISK - Om du går längre kommer all data på din disk att raderas! `n"-ForegroundColor Red
