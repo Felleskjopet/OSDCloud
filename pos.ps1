@@ -11,7 +11,7 @@ $svaret = Read-Host "Ditt val"
 # Kontrollere brukerens svar
 if ($svaret -eq 'J') {
     Write-Host "Startar OSDCloud-processen... Systemet kommer att reinstallera och radera all data på hårddisken!" -ForegroundColor Green
-    Start-OSDCloud -ImageFileUrl "https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV.esd" -ImageIndex 1 -Zti3
+    Start-OSDCloud -ImageFileUrl "https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV.esd" -ImageIndex 1 -ZTI
 } elseif ($svaret -eq 'N') {
     Write-Host "Operationen avbröts av användaren. Ingen ändring gjordes." -ForegroundColor Yellow
 } else {
