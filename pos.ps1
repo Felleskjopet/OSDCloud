@@ -18,12 +18,12 @@ if ($svaret -eq 'Y') {
 
 wpeutil reboot
 } elseif ($svaret -eq 'N') {
-    Write-Host "Operationen avbröts av användaren. Ingen ändring gjordes." -ForegroundColor Yellow
+    Write-Host "The operation was canceled by the user. No change was made." -ForegroundColor Yellow
     Write-Host -ForegroundColor Green "Restarting in 20 seconds!"
 
     Start-Sleep -Seconds 20
 
 wpeutil reboot
 } else {
-    Write-Host "Ogiltigt val. Vänligen kör skriptet igen och välj 'J' eller 'N'." -ForegroundColor Red
+    Write-Host "Invalid selection. Please run the script again and select 'Y' eller 'N'." -ForegroundColor Red
 }
