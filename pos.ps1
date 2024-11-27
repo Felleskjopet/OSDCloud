@@ -11,7 +11,7 @@ $svaret = Read-Host "Ditt val"
 # Kontrollere brukerens svar
 if ($svaret -eq 'J') {
     Write-Host "Startar OSDCloud-processen... Systemet kommer att reinstallera och radera all data på hårddisken!" -ForegroundColor Green
-    Start-OSDCloud -ImageFileUrl "https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV.esd" -ImageIndex 1 -ZTI
+    Start-OSDCloud -ImageFileUrl https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV.wim -ZTI
     Write-Host -ForegroundColor Green "Restarting in 10 seconds!"
 
     Start-Sleep -Seconds 10
