@@ -2,7 +2,7 @@
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
 
 # Informere brukeren om konsekvensene
-Write-Host "⚠️ Warning: This process will reinstall the system and erase ALL contents of the hard drive!" -ForegroundColor Red
+Write-Host "Warning: This process will reinstall the system and erase ALL contents of the hard drive!" -ForegroundColor Red
 Write-Host "Do you want to continue? Press 'Y' for Yes or 'N' for No" -ForegroundColor Yellow
 
 # Spør brukeren om bekreftelse
