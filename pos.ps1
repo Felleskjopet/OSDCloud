@@ -12,7 +12,8 @@ $svaret = Read-Host "Your choice"
 if ($svaret -eq 'Y') {
     Write-Host "Startar OSDCloud-processen... The system will install and delete all data on the hard drive!" -ForegroundColor Green
     #Start-OSDCloud -ImageFileUrl https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV.wim -ImageIndex 1 -ZTI
-    Start-OSDCloud -ImageFileUrl https://managementosdcloudst.blob.core.windows.net/osd/Win10_LTSC_2021_SV-updated.esd -ImageIndex 1 -ZTI
+    #Start-OSDCloud -ImageFileUrl https://managementosdcloudst.blob.core.windows.net/osd/Win10_LTSC_2021_SV-updated.esd -ImageIndex 1 -ZTI
+    Start-OSDCloud -ImageFileUrl https://managementosdcloudst.blob.core.windows.net/osd/Win_LTSC_2021_SV_0325.esd -ImageIndex 1 -ZTI
     Write-Host -ForegroundColor Green "Restarting in 10 seconds!"
 
     Start-Sleep -Seconds 10
