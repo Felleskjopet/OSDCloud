@@ -1,4 +1,4 @@
-Write-Host -ForegroundColor Green "Starting OSDCloud ZTI"
+Write-Host -ForegroundColor Green "Starting Windows 11 OSDCloud Installasjon"
 
 Start-Sleep -Seconds 5
 
@@ -24,7 +24,7 @@ Set-DisRes 1600
 
 ##Start OSDCloud ZTI the RIGHT way
 
-Write-Host -ForegroundColor Green "Start OSDCloud"
+#Write-Host -ForegroundColor Green "Start OSDCloud"
 
 #$command = Read-Host "Please make a choice between 1-4:
 
@@ -46,9 +46,9 @@ Write-Host -ForegroundColor Green "Start OSDCloud"
 #    default { Write-Host "Invalid selection." }
 #}
 
-Start-OSDCloudGUI
+#Start-OSDCloudGUI
 
-#Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 22H2 -OSEdition Enterprise -OSLanguage nb-no -ZTI
+Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 24H2 -OSEdition Pro -OSLanguage nb-no -ZTI
 
 #================================================
 #  [PostOS] OOBEDeploy Configuration
