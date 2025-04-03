@@ -48,7 +48,8 @@ Set-DisRes 1600
 
 #Start-OSDCloudGUI
 
-Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 24H2 -OSEdition Pro -OSLanguage nb-no -ZTI
+#Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 24H2 -OSEdition Pro -OSLanguage nb-no -ZTI
+Start-OSDCloud -OSVersion 'Windows 11' -OSBuild 24H2 -OSEdition Pro -OSLanguage nb-no -OSActivation Retail -Osimageindex 9 -ZTI include  
 
 #================================================
 #  [PostOS] OOBEDeploy Configuration
